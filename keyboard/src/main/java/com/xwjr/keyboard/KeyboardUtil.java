@@ -67,6 +67,18 @@ public class KeyboardUtil {
 
         @Override
         public void onPress(int primaryCode) {
+            switch (primaryCode) {
+                case Keyboard.KEYCODE_CANCEL:
+                case Keyboard.KEYCODE_DELETE:
+                case Keyboard.KEYCODE_SHIFT:
+                case Keyboard.KEYCODE_MODE_CHANGE:
+                case KEYCODE_PUN:
+                case 32:
+                    keyboardView.setPreviewEnabled(false);
+                    break;
+                default:
+                    keyboardView.setPreviewEnabled(true);
+            }
         }
 
         @Override
