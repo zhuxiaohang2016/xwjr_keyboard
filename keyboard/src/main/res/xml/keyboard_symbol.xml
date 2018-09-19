@@ -68,9 +68,9 @@
             android:codes="38"
             android:keyLabel="&#038;" />
         <Key
-            android:codes="47"
+            android:codes="95"
             android:keyEdgeFlags="right"
-            android:keyLabel="/" />
+            android:keyLabel="_" />
     </Row>
     <Row>
         <Key
